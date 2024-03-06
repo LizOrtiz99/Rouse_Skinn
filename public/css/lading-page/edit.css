@@ -1,0 +1,84 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Mooli&family=PT+Sans+Narrow&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mooli', sans-serif;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ffacb4;
+    transition: 1s;
+    text-align: center;
+}
+
+/* Estilos del contenedor */
+.container {
+    margin-top: 50px; /* Espacio superior */
+    max-width: 500px; /* Ancho máximo del contenedor */
+    background-color: #fff; /* Color de fondo */
+    padding: 20px; /* Espacio interior */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Estilos del título */
+.container h1 {
+    color: #000; /* Color del texto */
+    font-size: 24px; /* Tamaño de fuente */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilos de los campos de entrada */
+.container input[type="text"],
+.container input[type="email"] {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espacio interior */
+    margin-bottom: 20px; /* Espacio inferior */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Borde redondeado */
+    outline: none; /* Sin contorno al hacer clic */
+    transition: border-color 0.3s; /* Transición al cambiar el color del borde */
+}
+
+/* Estilos del botón */
+.container button[type="submit"] {
+    padding: 10px 20px; /* Espacio interior */
+    font-size: 16px; /* Tamaño de fuente */
+    background-color: #fedadc; /* Color de fondo */
+    color: #000; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición al cambiar el color de fondo */
+}
+
+.container button[type="submit"]:hover {
+    background-color: #ffacb4; /* Cambia el color de fondo al pasar el mouse */
+}
+/* Estilo de la barra de búsqueda */
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-container input[type=text] {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.search-container input[type=text]:focus {
+    outline: none;
+}

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Mooli&family=PT+Sans+Narrow&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mooli', sans-serif;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ffacb4;
+    transition: 1s;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    background: #fedadc;
+    padding: 70px;
+    color: #ffffff;
+    font-size: 10px;   
+    position: center;
+    width: 250px;
+    height: 600px;
+    display: flex; 
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 2);
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-button {
+    padding: 10px 10px;
+    font-size: 11px;
+    margin: 10px;
+    background-color: #fedadc;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    display: inline-block;
+    text-decoration: none; /* Quitamos el subrayado de los enlaces */
+}
+
+.menu-button:hover {
+    background: #ffacb4;
+}
+
+.container a {
+    font-size: 1500px;
+}
+
+.container a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces dentro de .container */
+}
+
+/* Estilos específicos para el botón de cerrar sesión */
+#cerrarSesionButton {
+    text-decoration: none; /* Quitamos el subrayado */
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 11px;
+    margin: 10px;
+    background-color: #fedadc;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+}
+
+#cerrarSesionButton:hover {
+    background: #ffacb4;
+}
+
+/* Archivo custom-styles.css */
+
+#logout-form button {
+    padding: 10px 20px;
+    font-size: 11px;
+    background-color: #fedadc;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    display: inline-block;
+    text-decoration: none; /* Quitamos el subrayado */
+    margin: 10px;
+}
+
+#logout-form button:hover {
+    background: #ffacb4;
+}
+
+/* Estilo de la barra de búsqueda */
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-container input[type=text] {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.search-container input[type=text]:focus {
+    outline: none;
+}
+

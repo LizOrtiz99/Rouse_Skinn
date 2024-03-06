@@ -1,0 +1,317 @@
+/* Estilos CSS */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Mooli&family=PT+Sans+Narrow&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mooli', sans-serif;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    background: #fedadc;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 1%;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+.menu-container {
+    background-color: #ffacb4;
+    color: #fff;
+    padding: 25px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    max-width: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 2);
+    margin: 20px;
+    min-width: 300px;
+    display: flexbox;
+}
+
+.form-container {
+    flex: 2;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 2);
+}
+
+.menu-button, .btn {
+    padding: 10px 10px;
+    font-size: 11px;
+    margin: 10px;
+    background-color: #fedadc;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menu-button:hover, .btn:hover {
+    background-color: #ffacb4;
+}
+
+.button-style, .modifyButton, .deleteButton {
+    padding: 10px 10px;
+    font-size: 11px;
+    background-color: #fedadc;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button-style:hover, .modifyButton:hover, .deleteButton:hover {
+    background-color: #ffacb4;
+}
+
+#form-container h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+#form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#form-container input[type="text"],
+#form-container input[type="email"],
+#form-container input[type="password"],
+#form-container select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 1px;
+    border: 0.0020px solid #635c5c;
+    border-radius: 4px;
+    outline: none;
+    font-size: 0.7em;
+    text-shadow: #bbafb7;
+    background-color: #ffe4e6;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    text-align: center;
+    width: 390px;
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+
+#form-container {
+    background-color: #ffacb4;
+    color: #fff;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 2);
+    margin: 20px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-danger, #logout-form button {
+    padding: 10px 10px;
+    font-size: 11px;
+    background-color: #fedadc;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+}
+
+.btn-danger:hover, #logout-form button:hover {
+    background-color: #fedadc;
+}
+
+.modifyButton {
+    padding: 10px 10px;
+    font-size: 11px;
+    background-color: #fedadc;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+}
+
+.modifyButton:hover {
+    background-color: #ffacb4;
+}
+
+#form-container button:hover {
+    background-color: #ffacb4;
+}
+
+#form-container h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#form-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.form-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.form-container th, .form-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.form-container th {
+    background-color: #fedadc;
+}
+
+.form-container tr:nth-child(even) {
+    background-color: #ffe4e6;
+}
+
+.form-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.form-container th, .form-container td {
+    color:#000000;
+    border: 2px solid #ffffff;
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.form-container th {
+    background-color: #fedadc;
+}
+
+.form-container tr:nth-child(even) {
+    background-color: #ffe4e6;
+}
+
+.modifyButton {
+    padding: 10px 10px;
+    font-size: 11px;
+    background-color: #fedadc;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+}
+
+.modifyButton:hover{
+    background-color: #ffacb4;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        justify-content: center;
+    }
+
+    .menu-container {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .form-container {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .menu-list {
+        flex-direction: column;
+    }
+
+    .menu-button {
+        width: 100%;
+    }
+
+    .menu-button:hover {
+        background-color: #ffacb4;
+    }
+    
+}
+/* Estilo de la barra de búsqueda */
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-container input[type=text] {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.search-container input[type=text]:focus {
+    outline: none;
+}
+

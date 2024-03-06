@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&family=Mooli&family=PT+Sans+Narrow&display=swap');
+
+/* Estilos para el gradiente */
+.gradient-custom-2 {
+    background: #ffacb4; /* Color base del gradiente */
+    background: -webkit-linear-gradient(to right, #dfdfdf); /* Fallback para navegadores webkit */
+    background: linear-gradient(to right, #ffacb4); /* Gradiente lineal */
+}
+
+/* Estilos para los botones */
+.button-custom {
+    background-color: #ff8080; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Quitamos el borde del botón */
+    padding: 10px 20px; /* Ajusta el relleno según tus preferencias */
+    border-radius: 5px; /* Redondeamos las esquinas del botón */
+    cursor: pointer; /* Cambiamos el cursor al pasar por encima del botón */
+    transition: background-color 0.3s ease; /* Efecto de transición suave */
+    font-family: 'Mooli', sans-serif; /* Fuente para el botón */
+}
+
+/* Cambio de color al pasar el ratón sobre el botón */
+.button-custom:hover {
+    background-color: #ff6666; /* Nuevo color de fondo al pasar el ratón */
+}
+
+/* Otros estilos */
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+}
