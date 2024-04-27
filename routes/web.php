@@ -71,6 +71,8 @@ Route::get('/existencias', 'App\Http\Controllers\ExistenciasController@index')->
 //Login
 Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('login', [LoginController::class, 'login']);
+Route::get('/generar-reporte-pdf', 'ExistenciasController@generarReportePDF')->name('generar-reporte-pdf');
+
 
 
 

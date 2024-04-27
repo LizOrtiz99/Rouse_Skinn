@@ -12,28 +12,19 @@ class ExistenciasController extends Controller
     {
         // Cargar todos los proveedores
         
-        $proveedor = Proveedores::all();
+        $proveedores = Proveedores::all();
 
         // Retornar la vista de existencias junto con los proveedores
-        return view('existencias', compact('proveedor'));
+        return view('existencias', compact('proveedores'));
     }
 
-    public function generarReporte(Request $request)
-    {
-        // Aquí puedes agregar la lógica para generar el reporte basado en los datos recibidos del formulario
+    public function generarReportePDF()
+{
+    // Obtener todos los movimientos de inventario
+    $movimiento = Movimientos::all();
 
-        $proveedor = $request->input('proveedor');
-
-        $movimientos = Movimiento::query();
-
-        if ($proveedor && $proveedor != 'todos') {
-            $movimientos->where('proveedor', $proveedor);
-        }
-
-        // Ejecuta la consulta
-        $resultados = $movimientos->get();
-
-        // Retorna los resultados a una vista para mostrar el reporte
-        return view('existencias', ['resultados' => $resultados]);
-    }
+    // Retornar la vista del PDF con los datos de los movimientos
+    $pdf = PDF::loadView('reporte-existencias-pdf', ['movimientos' => $movimientos]);
+    return $pdf->download('reporte_existencias.pdf');
+}
 }

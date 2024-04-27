@@ -52,11 +52,11 @@
                  </select>
                  <label for="proveedor">Proveedor:</label>
                     <select id="proveedor" name="proveedor_id" required>
-                        @foreach ($proveedor as $proveedores)
-                            <option value="{{ $proveedores->id }}">{{ $proveedores->name }}</option>
-                        @endforeach
+                    @foreach ($proveedores as $proveedor)
+                     <option value="{{ $proveedor->id }}">{{ $proveedor->name }}</option>
+                     @endforeach
                     </select>
-                <button class="menu-button">Generar Reporte</button>
+                    <a href="{{ route('generar-reporte-pdf') }}" class="btn btn-primary">Generar Reporte</a>
             </form>
         </div>
     </div>
